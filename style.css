@@ -1,0 +1,203 @@
+* {
+  font-family: "Quicksand", Courier, monospace;
+}
+html{padding: 0;
+margin: 0;
+overflow: 0;}
+
+body, .main {
+  background-color: #f4f4f9;
+  padding: 0;
+  overflow: 0;
+}
+
+
+
+body h1 {
+  color: #6c63ff;
+}
+body p {
+  color: #333333;
+}
+
+.main .header {
+  text-align: center;
+}
+
+.main .header h1 {
+  color: #6c63ff;
+  margin-bottom: 0;
+}
+
+.main .header p {
+  margin: 0;
+}
+
+.main .header .counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin: 20px 7%;
+  padding: 10px 15px;
+  background-color: #caebff;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.main .header .counter p {
+  font-weight: bold;
+}
+
+.main .body .emojies {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.main .body .emojies .img {
+  border: 3px solid #bedff4;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-bottom: 0;
+}
+
+.main .body .emojies .img:hover {
+  border: 3px solid #6c63ff;
+  background-color: #caebff;
+  cursor: pointer;
+}
+
+.main .body .emojies p {
+  margin: 0;
+}
+
+.aboutToday {
+  position: relative;
+  width: 90%;
+  margin: 50px 20px;
+}
+
+.aboutToday textarea {
+  width: 95%;
+  height: 150px;
+  padding: 25px 15px 10px;
+  border-radius: 15px;
+  border: 2px solid #6c63ff;
+  font-size: 16px;
+}
+
+.aboutToday label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #6c63ff;
+  background: #fff;
+  padding: 0 5px;
+  font-weight: bold;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+/* When the textarea is focused OR has content */
+.aboutToday textarea:focus {
+  border: 2px solid black;
+}
+
+.main .body .saveIt {
+  text-align: center;
+}
+
+.main .body button {
+  margin-top: 10px;
+  padding: 10px 35px;
+  border: 1px solid #6c63ff;
+  background-color: white;
+  font-size: 15px;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+
+.main .body .saveIt button:hover {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.main .otherDays .week {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.main .otherDays .week .days {
+  height: 100px;
+  width: 150px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #333333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .otherDays .week .days p {
+  margin: 0;
+}
+
+.main .quote {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.main .quote p {
+  text-align: center;
+  padding: 10px 35px;
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 15px;
+}
+
+.footer{
+  text-align: center;
+  background-color: #caebff;
+  color: #333333;
+  
+}
+
+.footer h2{
+  font-size: 40px;
+  margin: 0;
+}
+.footer .media {
+  margin: 0;
+  color: #333333;
+}
+.footer .media svg{
+  color: #333333;
+}
+
+.footer p{
+  margin: 0;
+  color: #333333;
+}
+
+@media (min-width: 600px) {
+  body h2 {
+    text-align: center;
+  }
+  .main .otherDays .week {
+    display: flex;
+    justify-content: space-around;
+  }
+  .main .header .counter {
+    width: 85%;
+  }
+
+  .aboutToday {
+    width: 99%;
+  }
+}
