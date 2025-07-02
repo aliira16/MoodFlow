@@ -133,11 +133,11 @@ body p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  width: 100%;
 }
 
 .main .otherDays .week .days {
   height: 100px;
-
   background-color: #ffffff;
   border-radius: 15px;
   border: 1px solid #333333;
@@ -187,6 +187,13 @@ body p {
 .footer p{
   margin: 0;
   color: #333333;
+}
+
+@media (max-width : 600px) {
+  
+.main .allDays .otherDays{
+  width: 99%;
+}
 }
 
 @media (min-width: 600px) {
